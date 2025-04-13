@@ -3,9 +3,9 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
+  '/icon-512x512.png',  // Prioritize larger icon
   '/granite-block.svg',
   '/icon-192x192.png',
-  '/icon-512x512.png',
   '/src/main.tsx',
   '/src/app.tsx'
 ];
