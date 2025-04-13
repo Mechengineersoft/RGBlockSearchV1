@@ -294,12 +294,12 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-end gap-2 mt-2">
+            <div className="flex justify-end gap-[2px] sm:gap-1 md:gap-2 mt-2 overflow-x-auto">
               <Button 
                 variant="outline" 
                 size="sm" 
                 onClick={() => setLocation(`/dis-rpt?blockNo=${encodeURIComponent(blockNo)}&thickness=${encodeURIComponent(thickness)}`)} 
-                className="h-9 flex gap-2 items-center bg-purple-100 hover:bg-purple-200 text-purple-800 hover:text-purple-900 border-purple-200 hover:border-purple-300"
+                className="h-9 flex gap-1 sm:gap-2 items-center bg-purple-100 hover:bg-purple-200 text-purple-800 hover:text-purple-900 border-purple-200 hover:border-purple-300 px-1.5 sm:px-2 md:px-3 min-w-fit whitespace-nowrap"
               >
                 <FileText className="h-4 w-4" />
                 Dis Rpt
@@ -308,7 +308,7 @@ export default function HomePage() {
                 variant="outline" 
                 size="sm" 
                 onClick={() => setLocation(`/polish?blockNo=${encodeURIComponent(blockNo)}&partNo=${encodeURIComponent(partNo)}&thickness=${encodeURIComponent(thickness)}`)} 
-                className="h-9 flex gap-2 items-center bg-purple-100 hover:bg-purple-200 text-purple-800 hover:text-purple-900 border-purple-200 hover:border-purple-300"
+                className="h-9 flex gap-1 sm:gap-2 items-center bg-purple-100 hover:bg-purple-200 text-purple-800 hover:text-purple-900 border-purple-200 hover:border-purple-300 px-1.5 sm:px-2 md:px-3 min-w-fit whitespace-nowrap"
               >
                 <FileText className="h-4 w-4" />
                 Polish
@@ -317,7 +317,7 @@ export default function HomePage() {
                 variant="outline" 
                 size="sm" 
                 onClick={() => setLocation(`/epoxy?blockNo=${encodeURIComponent(blockNo)}&partNo=${encodeURIComponent(partNo)}&thickness=${encodeURIComponent(thickness)}`)} 
-                className="h-9 flex gap-2 items-center bg-purple-100 hover:bg-purple-200 text-purple-800 hover:text-purple-900 border-purple-200 hover:border-purple-300"
+                className="h-9 flex gap-1 sm:gap-2 items-center bg-purple-100 hover:bg-purple-200 text-purple-800 hover:text-purple-900 border-purple-200 hover:border-purple-300 px-1.5 sm:px-2 md:px-3 min-w-fit whitespace-nowrap"
               >
                 <FileText className="h-4 w-4" />
                 Epoxy
@@ -326,7 +326,7 @@ export default function HomePage() {
                 variant="outline" 
                 size="sm" 
                 onClick={() => setLocation(`/grind?blockNo=${encodeURIComponent(blockNo)}&partNo=${encodeURIComponent(partNo)}&thickness=${encodeURIComponent(thickness)}`)} 
-                className="h-9 flex gap-2 items-center bg-purple-100 hover:bg-purple-200 text-purple-800 hover:text-purple-900 border-purple-200 hover:border-purple-300"
+                className="h-9 flex gap-1 sm:gap-2 items-center bg-purple-100 hover:bg-purple-200 text-purple-800 hover:text-purple-900 border-purple-200 hover:border-purple-300 px-1.5 sm:px-2 md:px-3 min-w-fit whitespace-nowrap"
               >
                 <FileText className="h-4 w-4" />
                 Grind
@@ -339,7 +339,7 @@ export default function HomePage() {
                   e.stopPropagation();
                   handleClear();
                 }} 
-                className="h-9"
+                className="h-9 px-1.5 sm:px-2 md:px-3 min-w-fit whitespace-nowrap"
               >
                 Clear
               </Button>
